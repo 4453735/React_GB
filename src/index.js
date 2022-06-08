@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Message from './Message';
+import { name } from './Message';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// const name = "Artem";
 root.render(
   <React.StrictMode>
     <App />
+      <Message name = {name} />
   </React.StrictMode>
 );
 
